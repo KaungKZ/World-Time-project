@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+      .time {
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .time select {
+        font-family: "Poppins", sans-serif;
+      }
+      .time p {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      .time .currentTime {
+        color: lightseagreen;
+      }
+      .time .location {
+        color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="time">
+      <p>Select the region you want to know the time of.</p>
+      <select name="timeZones" id="tz"> </select>
+    </div>
+    <script src="js/worldTime.js"></script>
+  </body>
+</html>
